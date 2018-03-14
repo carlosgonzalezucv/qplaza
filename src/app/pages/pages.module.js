@@ -7,9 +7,10 @@
 
   angular.module('BlurAdmin.pages', [
     'ui.router',
+    'BlurAdmin.pages.information',
     'BlurAdmin.pages.services',
-  ])
-      .config(routeConfig);
+    'BlurAdmin.pages.services.performance'    
+  ]).config(routeConfig);
 
   /** @ngInject */
   function routeConfig($urlRouterProvider, baSidebarServiceProvider) {
