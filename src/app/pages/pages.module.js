@@ -9,12 +9,13 @@
     'ui.router',
     'BlurAdmin.pages.information',
     'BlurAdmin.pages.services',
-    'BlurAdmin.pages.services.performance'    
+    'BlurAdmin.pages.services.performance',
+    'BlurAdmin.pages.services.monitores',
   ]).config(routeConfig);
 
   /** @ngInject */
   function routeConfig($urlRouterProvider, baSidebarServiceProvider) {
-    $urlRouterProvider.otherwise('/services');   
+    $urlRouterProvider.otherwise('/services');
   }
 
 })();

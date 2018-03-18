@@ -8,7 +8,7 @@
     function selector() {
       return {
         restrict: 'E',
-        templateUrl: 'app/pages/services/selector/selector.html',
+        templateUrl: 'app/pages/services/directives/selector/selector.html',
         scope: {
             title: "=?",
             icon: "=?",

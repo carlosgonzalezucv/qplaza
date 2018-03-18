@@ -1,3 +1,40 @@
 @import 'theme/conf/mixins';
 @import 'theme/conf/colorScheme/mint';
 @import 'theme/conf/variables';
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.over-hide {
+  overflow: hidden;
+}
+.upgrade {
+  background: $primary-light;
+}
+.upgrade input {
+  margin-top: -3px;
+  background: $primary;
+}
+.band-separator {
+  margin-bottom: 10px
+}
+hr { 
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: outset;
+  border-width: 1px;
+  border-color: $primary;
+} 
+.server-state-container {
+  background: rgb(211, 211, 211); 
+  padding-top: 10px;
+  margin-bottom: 10px; 
+  border-radius: 5px;
+}

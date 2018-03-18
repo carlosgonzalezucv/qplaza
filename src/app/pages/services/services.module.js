@@ -11,8 +11,8 @@
       // controller: 'ServicesCtrl',
       // controllerAs: 'vm',
       sidebarMeta: {
-          icon: 'ion-settings',
-          order: 800,
+        icon: 'ion-settings',
+        order: 800,
       },
     });
   }
