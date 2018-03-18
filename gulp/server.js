@@ -3,7 +3,6 @@
 var path = require('path');
 var gulp = require('gulp');
 var conf = require('./conf');
-var deploy = require('gulp-gh-pages');
 
 var browserSync = require('browser-sync');
 var browserSyncSpa = require('browser-sync-spa');
@@ -62,12 +61,4 @@ gulp.task('serve:e2e', ['inject'], function () {
 
 gulp.task('serve:e2e-dist', ['build'], function () {
   browserSyncInit(conf.paths.dist, []);
-});
-
-/**
- * Push build to gh-pages
- */
-gulp.task('deploy', function () {
-  return gulp.src("../src/**/*")
-    .pipe(deploy())
 });
