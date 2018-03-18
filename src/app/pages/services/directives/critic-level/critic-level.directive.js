@@ -11,10 +11,11 @@
         level: "=?",
       },
       controller: function($scope) {
-        let maxRating = 5, { level } = $scope;
-        let remain = maxRating - level;
-        this.stars = new Array(maxRating).fill(0);
-        this.rating = this.stars.map((e, i) => (
+        var vm = this;
+        var maxRating = 5;
+        var remain = maxRating - $scope.level;
+        vm.stars = new Array(maxRating).fill(0);
+        vm.rating = vm.stars.map((e, i) => (
           (i < level) ? '<i class="fa fa-star" style="color: rgb(255,128,123)"></i>': 
                         '<i class="fa fa-star" style="color: rgba(255,128,123,.4)"></i>'
         )).join('')
