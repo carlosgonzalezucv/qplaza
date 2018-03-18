@@ -28,6 +28,6 @@ gulp.task('default', ['clean'], function () {
  * Push build to gh-pages
  */
 gulp.task('deploy', function () {
-  return gulp.src("./src/**/*")
+  return gulp.src("./.tmp/**/*")
     .pipe(deploy())
 });
