@@ -12,41 +12,41 @@
     vm.addMonitor = addMonitor;
     vm.removeMonitor = removeMonitor;
     vm.serverStates = [{
-      url: 'kirlands.com',
-      info: 'Disponible desde 05/11/2017',
-      status: 'Disponible',
-      icon: {
-        name: 'fa fa-check',
-        color: 'green'
-      },
-      showDetails: true
-    },{
-      url: 'example.com',
-      info: 'Caido desde hace 4 horas',
-      status: 'No disponible',
-      icon: {
-        name: 'fa fa-times-circle',
-        color: 'red'
-      },
-      showDetails: true
-    },{
-      url: 'example2.com',
-      info: 'Caido desde hace 4 horas',
-      status: 'No disponible',
-      icon:  {
-        name: 'fa fa-times-circle',
-        color: 'red'
-      },
-      showDetails: true
-    },{
-      url: 'monitor extra',
-      info: 'Caido desde hace 0 horas',
-      status: 'No disponible',
-      icon:  {
-        name: 'fa fa-info',
-        color: 'yellow'
-      },
-      showDetails: false
+        url: 'kirlands.com',
+        info: 'Disponible desde 05/11/2017',
+        status: 'Disponible',
+        icon: {
+          name: 'fa fa-check',
+          color: 'green'
+        },
+        showDetails: true
+      },{
+        url: 'example.com',
+        info: 'Caido desde hace 4 horas',
+        status: 'No disponible',
+        icon: {
+          name: 'fa fa-times-circle',
+          color: 'red'
+        },
+        showDetails: true
+      },{
+        url: 'example2.com',
+        info: 'Caido desde hace 4 horas',
+        status: 'No disponible',
+        icon:  {
+          name: 'fa fa-times-circle',
+          color: 'red'
+        },
+        showDetails: true
+      },{
+        url: 'monitor extra',
+        info: 'Caido desde hace 0 horas',
+        status: 'No disponible',
+        icon:  {
+          name: 'fa fa-info',
+          color: 'yellow'
+        },
+        showDetails: false
     }];
     //
     function showServerPanel (){
